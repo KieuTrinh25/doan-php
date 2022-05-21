@@ -36,7 +36,8 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Categories:</h6>
-                        <a class="collapse-item" href="buttons.html">Add Category</a>
+                        <a class="collapse-item" href="<?php echo getAdminUrl('categories'); ?>">All</a>
+                        <a class="collapse-item" href="<?php echo getAdminUrl('categories/create.php'); ?>">Add Category</a>
                     </div>
                 </div>
             </li>
