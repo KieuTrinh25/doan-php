@@ -93,133 +93,33 @@
             </div>
             <h5 style="margin:30px 0px 30px 30px">SẢN PHẨM NỔI BẬT </h5>
             <div class="main" style="text-align: center;">
-                <div class="row " >
-                    <div class="col-md-6 col-4 col-lg-3">
-                        <div class="card"  >
-                            <img src="img/upload_ab2003c7b7e445f6a551b92f559c4881_master.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                               <h6 class="card-title">Cải bó xôi</h6>
-                               <h6 class="card-text">29,000 đ</h6>
-                               <a href="#" class="btn btn-success">Thêm vào giỏ </a>
-                            </div>
-                        </div>
+          
+            <div class="box">
+                    <div class="row " >
+                        <!--Vùng dữ liệu-->
+                        <?php 
+                            require_once './libs/mysql.php';
+                            $sql = "Select * from products";
+                            $query = $pdo->prepare($sql);
+                            $query->execute();
+                            foreach($query as $row) { ?>
+                                <div class="col-xs-2 col-2 col-lg-2 mb-4" >
+                                    <div class="card"  >
+                                        <img src="./img/<?php echo $row['image'];?>" width="100%" height="200px">
+                                        <div class="card-body">
+                                            <a href="single.php?id=<?php echo $row['id']; ?>"><?php echo $row['name']; ?></a>
+                                            <h6 class="card-text"><?php echo $row['price']; ?>đ</h6>
+                                            
+                                            <a  class="btn btn-success" href="order.php?id=<?php echo $row['id']; ?>">Thêm vào giỏ </a>
+                                        </div>
+                                    </div>
+                                </div>                      
+                        <?php } ?>
                     </div>
-                    <div class="col-md-6 col-4 col-lg-3">
-                        <div class="card"  >
-                            <img src="img//sau_rieng_ri6_2_5635cf70bdbc413db7ccdb9bbc5955ed_master.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                               <h6 class="card-title">Sầu riêng Ri6</h6>
-                               <h6 class="card-text">235,000 đ</h6>
-                               <a href="#" class="btn  btn-success">Thêm vào giỏ </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-4 col-lg-3">
-                        <div class="card"  >
-                            <img src="img/upload_0eb73c63c83b4a388696a01d7394c2fc_master.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                               <h6 class="card-title">Thịt nạc đùi heo</h6>
-                               <h6 class="card-text">84,000 đ</h6>
-                               <a href="#" class="btn btn-success">Thêm vào giỏ </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-4 col-lg-3">
-                        <div class="card"  >
-                            <img src="img/upload_021f1d5bfb6043009170a1f950ecea5a_master.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                               <h6 class="card-title">Xoài cát Hòa Lộc </h6>
-                               <h6 class="card-text">140,000 đ</h6>
-                               <a href="#" class="btn btn-success">Thêm vào giỏ </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-4 col-lg-3">
-                        <div class="card"  >
-                            <img src="img/upload_1c4b595369214f1da01e1ee7dfe9b948_master.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                               <h6 class="card-title">Cam soàn hướng</h6>
-                               <h6 class="card-text">65,000 đ</h6>
-                               <a href="#" class="btn  btn-success">Thêm vào giỏ </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-4 col-lg-3">
-                        <div class="card"  >
-                            <img src="img/1_T_GX34ajHqviNUs4O6j8gg.jpeg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                               <h6 class="card-title">Bơ sáp Lâm Đồng</h6>
-                               <h6 class="card-text">135,000 đ</h6>
-                               <a href="#" class="btn  btn-success">Thêm vào giỏ </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col-md-6 col-4 col-lg-3">
-                        <div class="card"  >
-                            <img src="img/tom_su_huu_co_binca_3_master.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                               <h6 class="card-title">Tôm sú</h6>
-                               <h6 class="card-text">180,000 đ</h6>
-                               <a href="#" class="btn  btn-success">Thêm vào giỏ </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-4 col-lg-3">
-                        <div class="card"   >
-                            <img src="img/dragon-fruit-1490952843346-crop-1490953174156-2057.jpg" class="card-img-top"style="height: 187px;">
-                            <div class="card-body">
-                               <h6 class="card-title">Thanh long </h6>
-                               <h6 class="card-text">45,000 đ</h6>
-                               <a href="#" class="btn  btn-success">Thêm vào giỏ </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-4 col-lg-3">
-                        <div class="card"  >
-                            <img src="img/ca_trac_vang_bien_1_master.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                               <h6 class="card-title">Cá trác vàng biển</h6>
-                               <h6 class="card-text">71,000 đ</h6>
-                               <a href="#" class="btn  btn-success">Thêm vào giỏ </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-4 col-lg-3">
-                        <div class="card"  >
-                            <img src="img/ga.jpg" class="card-img-top" style="height: 187px;">
-                            <div class="card-body">
-                               <h6 class="card-title">Gà ta thả vườn </h6>
-                               <h6 class="card-text">195,000 đ</h6>
-                               <a href="#" class="btn  btn-success">Thêm vào giỏ </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-4 col-lg-3">
-                        <div class="card"  >
-                            <img src="img/ca_basa_huu_co_binca_cat_lat_master.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                               <h6 class="card-title">Cá Basa cắt lát</h6>
-                               <h6 class="card-text">75,000 đ</h6>
-                               <a href="#" class="btn  btn-success">Thêm vào giỏ </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-4 col-lg-3">
-                        <div class="card"  >
-                            <img src="img/upload_1d1797f33c5140e4a7742aa0470d77e5_master.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                               <h6 class="card-title">Bưởi da xanh</h6>
-                               <h6 class="card-text">70,000 đ</h6>
-                               <a href="#" class="btn btn-success">Thêm vào giỏ </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <button type="button" class="btn btn-success" style="margin-left: 50px; ">Xem thêm</button>  
             </div>
             <div class="clear"></div>
-            <button type="button" class="btn btn-success" style="margin-left: 620px; margin-top: 20px;">Xem thêm</button>  
+            
             <h5 style="margin:30px 0px 30px 30px">Kết nối nhà vườn</h5>
             
             <div class="owl-carousel owl-theme" style="margin-left: 35px;">
@@ -333,31 +233,6 @@
             
         </div>
          
-       <div class="background mt-5" >
-            <h1 class="block-1"  >Khách hàng nói gì về MonaFesh</h1>
-            <div class="row">
-                <div class="col-md-4">
-                <img src = "img/bang.jpg" >
-                <p>“Trang này dịch vụ tốt, rau củ quả tươi ngon an toàn, giá hợp lý.<br> Mình rất hài lòng và sẽ giới thiệu cho bạn bè mình.”<br>
-
-                    Viết Bằng / Mona Media</p>
-                </div> 
-                <div class="col-md-4">
-                <img src = "img/trinh.jpg" >
-                <p>“MonaFresh là nơi giúp bạn có thể yên tâm <br>khi lựa chọn thực phẩm và hiểu hơn về nông nghiệp hữu cơ”<br>
-
-                    Kiều Trinh / Mona Media</p>
-                </div> 
-                <div class="col-md-4">
-                <img src = "img/trinh.jpg" >
-                <p>“Trang này dịch vụ tốt, rau củ quả tươi ngon an toàn, giá hợp lý. ”<br>
-
-                    Quốc Toản / Mona Media</p>
-                </div> 
-            </div> 
-            <img src = "img/thung_lung_bac_son.jpg" >
-           
-        </div>
         
         
     </div>
