@@ -5,7 +5,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+                <div class="sidebar-brand-text mx-3">Admin <sup>2</sup></div>
             </a>
 
             <!-- Divider -->
@@ -86,7 +86,7 @@
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Charts</span></a>
             </li>
-            
+
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
