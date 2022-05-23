@@ -67,6 +67,7 @@
               </table>
         </div>
         <div class=" col-md-7 col-9 col-lg-9  ">
+        
             <div class="row " style="margin-left: 20px;">
                 <div class="col-md-4 col-2 col-lg-4" >
                 <div class="item">

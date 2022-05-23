@@ -1,13 +1,14 @@
 body{
 	font-size: 18px;
 }
-#header{
-    background-color: rgb(247, 253, 250);
-}
+ #header nav a{
+     color: black;
+ }
+
 #header nav a.nav-link:hover {
     color: #fff;
 }
- 
+
 input[type="search-box"] {
     border-radius: 20px;
 }
@@ -150,31 +151,18 @@ a.hover-white:hover.btn {
     
 }
  
- .block-1 {
-    padding:30px 470px  ;
-    color: white;
-    background-size: cover;
-    position: absolute;
-    overflow: hidden;
-}
-.background .row img  {  
-    padding:130px 170px ;
-    background-size: cover; 
-    position: absolute;
-    overflow: hidden;
-}
-.background p{
-    padding:300px 50px ;
-    background-size: cover; 
-    position: absolute;
-    overflow: hidden;
-    color:white;
-    text-align: center;
-}
-#footer .row a{
+
+#footer .row a  {
     text-decoration: none;   
+   color:white;
  
 }
+#footer .row p  {
+    text-decoration: none;   
+   color:white;
+ 
+}
+
 a.hover-footer:hover.btn {
     color: rgb(102, 76, 76) !important;
 }

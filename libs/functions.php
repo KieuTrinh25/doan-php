@@ -100,3 +100,4 @@ function calc_product_price($product) {
     $sum = $product['quantity'] * $product['price'];
     return number_format($sum);
 }
+ 

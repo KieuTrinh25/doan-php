@@ -1,23 +1,23 @@
 <div   id="footer">
-<div class="container-fluid " style="background-color: darkslategray; color: white; margin-top:50px">
-                <div class="row     pt-5" >
+<div class="container-fluid " style="background-color: rgb(59, 128, 105);  margin-top:50px">
+                <div class="row     pt-5"  >
                     <div class=" col-md-3 "  style="margin-left:60px">
                                        
-                        <img src="img/mona.png" style="height: 125px; width : 50% ">    
+                        <img src="img/logoVuong.png" style="height: 125px; width : 50% ">    
                         <p>176 Trần Phú, phường Phước Vĩnh,<br>
                              Thành phố Huế, Thừa Thiên Huế <br>
 
-                        <img src="img/telephone-call (1).png"> 079 254 5710<br>
+                        <img src="img/telephone-call.png"> 079 254 5710<br>
 
-                        <img src="img/gmail.png"> trinh0792545710@gmail.com <br>
+                        <img src="img/gm.png"> trinh0792545710@gmail.com <br>
                             
 
                             
                         </p>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-2" >
                         <h5>SẢN PHẨM</h5>
-                        <a href="#">Rau củ</a><br>
+                        <a href="#" >Rau củ</a><br>
                         <a href="#">Hải sản</a><br>
                         <a href="#">Trái cây</a><br>
                         <a href="#">Thịt trứng</a><br>
@@ -58,7 +58,7 @@
                         
                     </div>
                     <div class="col-md-12 bg-dark text-center pt-2">
-                        <p>Bản quyền thuộc về Trần Thị Kiều Trinh CNTTB K18 © 2022</p>
+                        <p style="  color: white;">Bản quyền thuộc về Trần Thị Kiều Trinh CNTTB K18 © 2022</p>
                     </div>
                 </div>
                

@@ -66,6 +66,8 @@
                                             <th>STT</th>
                                             <th>Name</th>
                                             <th>Description</th>
+                                            <th>Quantity</th>
+                                            <th>Price</th>
                                             <th>#</th>
                                             <th>#</th>
                                         </tr>
@@ -75,6 +77,8 @@
                                             <th>STT</th>
                                             <th>Name</th>
                                             <th>Description</th>
+                                            <th>Quantity</th>
+                                            <th>Price</th>
                                             <th>#</th>
                                             <th>#</th>
                                         </tr>
@@ -86,6 +90,8 @@
                                             <td><?php echo increment($i); ?></td>
                                             <td><?php echo $category['name']; ?></td>
                                             <td><?php echo $category['description']; ?></td>
+                                            <td><?php echo $category['quantity']; ?></td>
+                                            <td><?php echo $category['price']; ?></td>
                                             <td><a href="edit.php?id=<?php echo $category['id']; ?>">Edit</a></td>
                                             <td><a href="delete.php?id=<?php echo $category['id']; ?>">Delete</a></td>
                                         </tr>
@@ -100,7 +106,6 @@
 
             </div>
             <!-- End of Main Content -->
-
             <!-- Footer -->
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">

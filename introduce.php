@@ -19,93 +19,71 @@
     <script src="js/web.js"></script>
 <body onload="autoloadimg ()">
 <?php include_once './inc/header.php'?>
-    <div class="content">
-      <div class="container-fluid">
-          <!--mơ phần giới thiệu-->
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-4"></div>
-                  <div class="col-md-4 text-center">
-                  <h1><b>MONA MEDIA</b></h1>
-                  </div>
-                  <div class="col-md-4"></div>
-              
-              </div>
-              <div class="row">
-                  <div class="col-md-3"></div>
-                  <div class="col-md-6 text-center">
-                      <h5><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,</p></h5>
-                      <p>sed diam nonummy nibh.</p>
-                  </div>
-                  <div class="col-md-3"></div>
-              </div>
-          </div>
-      </div>
-       <!--đống phần giới thiệu-->
+    <div id="content">
+        
        <div class="container">
-           <div class="row">
-               <div class="col-md-4">
+            <div class ="monamedia">
+                <h1  style = "text-align:center ; margin-top:20px"> PANDA MEDIA </h1>
+                <h6  style = "text-align:center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,<br>
+                            sed diam nonummy nibh.</h6> 
+            </div>              
+           <div class="row mt-5">
+               <div class="col-xs-2 col-3   mb-4 " style="margin-left:50px">
                    <div class="row ">
-                       <div class="col-md-12 text-center " >
-                       <img src="apple.svg" width="90px" height="90px">
-                       <br>
-                       <br>
-                      <h5>New Features</h5>
-                      <p>Lorem ipsum dolor sit amet,</p>
-                      <p>consectetuer adipiscing elit, sed</p>
-                      <p>diam nonummy nibh euismod</p>
-                      <p>tincidunt</p>
-                       </div> 
+                        <div class="col-md-12 text-center " >
+                            <img src="img/new.png"   width="200px" height="100px">
+                             
+                            <h5>New Features</h5>
+                            <p>Lorem ipsum dolor sit amet,</p>
+                            <p>consectetuer adipiscing elit, sed</p>
+                            <p>diam nonummy nibh euismod</p>
+                            <p>tincidunt</p>
+                        </div> 
                    </div>
                    <div class="row ">
                        <div class="col-md-12 text-center " >
-                       <img src="apple.svg" width="90px" height="90px">
-                       <br>
-                       <br>
-                      <h5>Unlimited Options</h5>
-                      <p>Lorem ipsum dolor sit amet,</p>
-                      <p>consectetuer adipiscing elit, sed</p>
-                      <p>diam nonummy nibh euismod</p>
-                      <p>tincidunt</p>
+                            <img src="img/re.png"  width="200px" height="100px">
+                             
+                            <h5>Unlimited Options</h5>
+                            <p>Lorem ipsum dolor sit amet,</p>
+                            <p>consectetuer adipiscing elit, sed</p>
+                            <p>diam nonummy nibh euismod</p>
+                            <p>tincidunt</p>
                        </div> 
                    </div>
                </div>
-               <div class="col-md-5">
+               <div class="col-xs-2 col-4  mt-5  ">
                    <div class="row">
                        <div class="col-md-12">
-                           <img src="img1.png" width="500px" height="500px">
+                           <img src="img/ipad2.png" width="500px" height="550px">
                        </div>
                    </div>
                </div>
-               <div class="col-md-3">
+               <div class=" col-xs-2 col-4 " style="margin-left:20px">
                    <div class="row ">
-                       <div class="col-md-12 text-center " >
-                       <img src="apple.svg" width="90px" height="90px">
-                       <br>
-                       <br>
-                      <h5>Responsive</h5>
-                      <p>Lorem ipsum dolor sit amet,</p>
-                      <p>consectetuer adipiscing elit, sed</p>
-                      <p>diam nonummy nibh euismod</p>
-                      <p>tincidunt</p>
-                       </div> 
+                        <div class="col-md-12 text-center " >
+                            <img src="img/un.png" width="200px" height="100px">
+                            <h5>Responsive</h5>
+                            <p>Lorem ipsum dolor sit amet,</p>
+                            <p>consectetuer adipiscing elit, sed</p>
+                            <p>diam nonummy nibh euismod</p>
+                            <p>tincidunt</p>
+                        </div> 
                    </div>
                    <div class="row ">
-                       <div class="col-md-12 text-center " >
-                       <img src="apple.svg" width="90px" height="90px">
-                       <br>
-                       <br>
-                      <h5>Customize Anything</h5>
-                      <p>Lorem ipsum dolor sit amet,</p>
-                      <p>consectetuer adipiscing elit, sed</p>
-                      <p>diam nonummy nibh euismod</p>
-                      <p>tincidunt</p>
-                       </div> 
+                        <div class="col-md-12 text-center " >
+                            <img src="img/cus.png"  width="200px" height="100px">
+                            <h5>Customize Anything</h5>
+                            <p>Lorem ipsum dolor sit amet,</p>
+                            <p>consectetuer adipiscing elit, sed</p>
+                            <p>diam nonummy nibh euismod</p>
+                            <p>tincidunt</p>
+                        </div> 
                    </div>
                 </div>
                 
            </div>      
-        </div>   
+          
     </div>
  <!--end content-->
  <?php include_once './inc/footer.php'?>

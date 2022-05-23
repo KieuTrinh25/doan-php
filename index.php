@@ -18,7 +18,7 @@
      <!-- JQuery & Own Carousel -->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="./js/owl.carousel.js"></script>
-    <script src="js/web.js"></script>
+    <script src="./js/web.js"></script>
 </head>
 <body onload="autoloadimg ()">
 <?php include_once './inc/header.php'?>
@@ -104,16 +104,18 @@
                             $query->execute();
                             foreach($query as $row) { ?>
                                 <div class="col-xs-2 col-2 col-lg-2 mb-4" >
-                                    <div class="card"  >
-                                        <img src="./img/<?php echo $row['image'];?>" width="100%" height="200px">
-                                        <div class="card-body">
-                                            <a href="single.php?id=<?php echo $row['id']; ?>"><?php echo $row['name']; ?></a>
-                                            <h6 class="card-text"><?php echo $row['price']; ?>đ</h6>
-                                            
-                                            <a  class="btn btn-success" href="order.php?id=<?php echo $row['id']; ?>">Thêm vào giỏ </a>
+                                    <a href="single.php?id=<?php echo $row['id']; ?>"> 
+                                        <div class="card"  >
+                                            <img src="./img/<?php echo $row['image'];?>" width="100%" height="200px">
+                                            <div class="card-body">
+                                                <p style="color: black" ><?php echo $row['name']; ?></p>
+                                                <b class="card-text  " style="color: orange"><?php echo $row['price']; ?>đ</b>       
+                                                <a  class="btn btn-success" href="order.php?id=<?php echo $row['id']; ?>">Thêm vào giỏ </a>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>                      
+                                    </a>
+                                </div>  
+                                                    
                         <?php } ?>
                     </div>
                     <button type="button" class="btn btn-success" style="margin-left: 50px; ">Xem thêm</button>  
